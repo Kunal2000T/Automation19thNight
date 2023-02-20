@@ -11,8 +11,11 @@ public class LoginPageTest {
 		
 		System.setProperty("webdriver.chrome.driver","C:\\ALL Notes AUTO MANUAL + SQL\\AUTOMATION NOTES\\KUNAL AUTOMATION DOCUMENT\\chromedriver_win32\\chromedriver.exe");
 		WebDriver driverTest = new ChromeDriver();
-//		driverTest.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
-//		driverTest.manage().window().maximize();
+		driverTest.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+		driverTest.manage().window().maximize();
+		
+// 		driverTest.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+// 		driverTest.manage().window().maximize();
 		
 		driverTest.get("https://www.facebook.com/");
 
